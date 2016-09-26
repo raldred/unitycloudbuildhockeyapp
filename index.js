@@ -1,5 +1,5 @@
 // Initialise .env config.
-if(!process.env.PORT) {
+if(!process.env.UNITYCLOUD_KEY) {
     require('dotenv').config();
 }
 
