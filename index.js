@@ -1,5 +1,7 @@
 // Initialise .env config.
-require('dotenv').config();
+if(!process.env.PORT) {
+    require('dotenv').config();
+}
 
 // Options
 var options = {
