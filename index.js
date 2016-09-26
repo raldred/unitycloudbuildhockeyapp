@@ -169,8 +169,9 @@ function uploadToHockeyApp( filename ){
     form.append('status', 2);
     // form.append('mandatory', MANDATORY_TYPE[options.mandatory]);
     form.append('notes', "Automated release triggered from Unity Cloud Build.");
-    form.append('notes_type', 0);
-    form.append('notify', 0);
+    form.append('notes_type', 1);
+    form.append('notify', 1);
+    form.append('strategy', 'replace');
     form.append('ipa', readable);
 
     var req = form.submit({
