@@ -48,6 +48,8 @@ var mainRes;
 app.post('/build', jsonParser, function (req, res) {
     if (!req.body) return res.sendStatus(400);
 
+    console.log(req.body);
+
     mainRes = res;
 
     // 1. Get Build API URL
